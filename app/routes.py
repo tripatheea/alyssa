@@ -34,7 +34,6 @@ def quizzes():
 
 @app.route('/WAYF', methods = ['GET', 'POST'])
 def WAYF():
-   #return "Hey bitch!" + str(request.args)
    r = requests.post(constants.url['stellar'], data=request.args)
    return r.content
 
